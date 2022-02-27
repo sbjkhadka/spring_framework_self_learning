@@ -10,5 +10,14 @@
  http://www.springframework.org/schema/context/spring-beans.xsd">
  
  <bean class="com.springcore.ci.Certifiacate" name="cer" c:name="Python snake" />
- <bean class="com.springcore.ci.Person" name="person" c:name="Subarna" c:personId="12" c:certificate-ref="cer"/>
+ <bean class="com.springcore.ci.Person" name="person" c:name="Subarna" c:personId="12" c:certificate-ref="cer">
+ 	<constructor-arg>
+ 		<list>
+ 			<value>111</value>
+ 			<value>222</value>
+ 			<value>333</value>
+ 		</list>
+ 	</constructor-arg>
+ </bean>
+ 
  </beans>
